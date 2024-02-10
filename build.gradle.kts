@@ -30,13 +30,14 @@ ext {
 version = "%s%s".format(Locale.ROOT, baseVersion, versionExtension)
 
 repositories {
+    mavenLocal()
     mavenCentral()
-    maven("https://oss.sonatype.org/content/repositories/snapshots")
+    maven("https://s01.oss.sonatype.org/content/repositories/snapshots/")
     maven("https://jitpack.io")
 }
 
 dependencies {
-    implementation("net.onelitefeather.microtus:Minestom:1.1.1")
+    implementation("net.onelitefeather.microtus:Minestom:1.1.4-SNAPSHOT")
     implementation("net.kyori:adventure-text-minimessage:4.14.0")
 
 }
